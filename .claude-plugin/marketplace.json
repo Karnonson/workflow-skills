@@ -1,0 +1,15 @@
+{
+  "name": "workflow-skills",
+  "owner": {
+    "name": "Zana",
+    "url": "https://github.com/Karnonson"
+  },
+  "plugins": [
+    {
+      "name": "workflow",
+      "source": "./plugins/workflow",
+      "description": "The six-step build loop: ideate, refine, spec, slice, implement, audit."
+    }
+  ],
+  "description": "The build loop taught in the AI Coding Mini-Course: six small skills, one per step, that turn a problem into a shipped app."
+}

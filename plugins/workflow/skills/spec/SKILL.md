@@ -1,0 +1,20 @@
+---
+name: spec
+description: Use after the decisions are settled and before any slices. Turns the Idea Frame and the decisions into one spec — synthesis only, no interview. Never builds.
+---
+
+Read `builds/<NN>-<slug>/idea.md` and `decisions.md` first (a number or name given as argument picks the folder, else the only one, else ask). Everything you need is in those two files and, if present, `prototypes/`. Do not interview. If a decision is truly missing, ask that one question and nothing else; if merely unstated, fill it in and mark it Assumed.
+
+Before writing, name the **seams**: the few places where the finished thing can be checked from the outside — what goes in, what must come out — without reading its insides. Fewer is better; one is ideal. Put them to the person in plain words — "we test it by: <what happens> → <what they see>" — and wait for a yes. That is the only check-in.
+
+Then write `spec.md` beside the other two with exactly these headings:
+
+- **Problem** — from their side, two or three sentences, lifted from the frame.
+- **Solution** — what they will see and do. No technology words.
+- **User stories** — a long numbered list: "As <who>, I want <thing>, so that <benefit>". One story per behaviour, every settled decision covered, awkward cases included (not a client call, first run, empty list).
+- **Implementation decisions** — one line per decision that shapes the build, plus the parts to build and how they talk to each other. No file paths, no code — unless a prototype pinned a shape better than prose; then inline it and say where it came from.
+- **Testing decisions** — the seams agreed above, and the rule: test what it does, never how.
+- **Out of scope** — Dropped and Not yet, verbatim.
+- **Open** — everything Assumed, marked, so the next step can question it.
+
+Re-read once: every Settled row must appear above; anything two-readable, fix in place; report what changed. Stop; do not offer slices or code.
