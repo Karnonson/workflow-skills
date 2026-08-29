@@ -26,4 +26,9 @@ In any Claude Code session:
 Then `/ideate` and the rest answer by name. `/plugin details workflow` shows what it costs you per
 session; `/plugin uninstall workflow` removes it.
 
+## Where these come from
+
+The skills in this repo are **copies**. They are written and revised in `~/Desktop/skill-hub/skills`, which is the
+source of truth, and copied here to be published. Do not edit them here — the next copy out will overwrite it.
+
 `refine` is adapted from Matt Pocock's `grilling` (MIT) — github.com/mattpocock/skills.
