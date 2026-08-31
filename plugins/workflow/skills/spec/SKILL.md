@@ -11,6 +11,7 @@ Then write `spec.md` beside the other two with exactly these headings:
 
 - **Problem** — from their side, two or three sentences, lifted from the frame.
 - **Solution** — what they will see and do. No technology words.
+- **Look** — only if it has a screen: the feel in three words, colours by name, type mood, imagery, one reference site. Assumed if refine left it.
 - **User stories** — a long numbered list: "As <who>, I want <thing>, so that <benefit>". One story per behaviour, every settled decision covered, awkward cases included (not a client call, first run, empty list).
 - **Implementation decisions** — one line per decision that shapes the build, plus the parts to build and how they talk to each other. No file paths, no code — unless a prototype pinned a shape better than prose; then inline it and say where it came from.
 - **Testing decisions** — the seams agreed above, and the rule: test what it does, never how.

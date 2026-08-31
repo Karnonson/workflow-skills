@@ -23,6 +23,6 @@ Then write `slices.md` beside the spec, one section per slice:
 - [ ] …
 ```
 
-Every user story lands in exactly one slice's "Done when"; leftovers go under **Unplaced** at the end, with why. No file paths, no code — unless a prototype pinned a shape better than prose; inline it and say so.
+Every user story lands in exactly one slice's "Done when"; leftovers go under **Unplaced** at the end, with why. The first slice with a screen gets a Done when line that it looks the way the spec's **Look** says. No file paths, no code — unless a prototype pinned a shape better than prose; inline it and say so.
 
 Re-read once: any slice that cannot be tried on its own, re-cut; report what changed. Stop; do not offer to build.

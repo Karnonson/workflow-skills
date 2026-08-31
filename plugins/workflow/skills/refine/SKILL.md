@@ -19,6 +19,8 @@ Each answer reshapes the tree: settled decisions push the frontier outward. Reco
 
 Finding *facts* is your job, never theirs: if a question needs the filesystem or the web, look it up (a sub-agent is fine) and ask something else meanwhile. The *decisions* are theirs: put each one to them and wait. Never ask what they cannot answer without knowing how software works; rephrase it as what they want to happen.
 
+If it has a screen, one frontier question is how it should look: the feel in three words, colours they own or like, a site they would point at, image or none. Offer three concrete looks to pick from; never leave it to the build.
+
 Small is a valid answer: if the answers show the idea shrinking, say so, and treat "then we do not build this" as a real option.
 
 Done when the frontier is empty. Then write `decisions.md` beside it with exactly these headings: **Settled** — table: question · answer · why; **Assumed** — anything you filled in yourself, marked as such; **Dropped** — what the interview cut, and why. Re-read once for anything vague or two-readable, fix in place, report what changed. Stop; do not offer to spec or build.
