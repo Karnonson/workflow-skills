@@ -1,7 +1,7 @@
 {
   "name": "workflow",
   "description": "The six-step build loop: ideate, refine, spec, slice, implement, audit. One skill per step; each writes one file into the build folder and hands it to the next.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": {
     "name": "Zana"
   }
