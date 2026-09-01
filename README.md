@@ -5,26 +5,29 @@ AI Coding Mini-Course.
 
 | Step | Skill | Writes |
 | --- | --- | --- |
-| 1 | `/ideate` | `idea.md` |
-| 2 | `/refine` | `decisions.md` |
-| 3 | `/spec` | `spec.md` |
-| 4 | `/slice` | `slices.md` |
-| 5 | `/implement` | the code, plus ticks under the slice |
-| 6 | `/audit` | `audits/<NN>.md` |
+| 1 | `/workflow:ideate` | `idea.md` |
+| 2 | `/workflow:refine` | `decisions.md` |
+| 3 | `/workflow:spec` | `spec.md` |
+| 4 | `/workflow:slice` | `slices.md` |
+| 5 | `/workflow:implement` | the code, plus ticks under the slice |
+| 6 | `/workflow:audit` | `audits/<NN>.md` |
 
 All six write into one folder per idea, `builds/<NN>-<slug>/`, and each reads what the last one left.
 
 ## Install
 
-In any Claude Code session:
+In a terminal, standing in the project you want the loop in:
 
 ```
-/plugin marketplace add Karnonson/workflow-skills
-/plugin install workflow@workflow-skills
+claude plugin marketplace add Karnonson/workflow-skills
+claude plugin install workflow@workflow-skills --scope project
 ```
 
-Then `/ideate` and the rest answer by name. `/plugin details workflow` shows what it costs you per
-session; `/plugin uninstall workflow` removes it.
+`--scope project` switches the plugin on for that folder only (it writes `.claude/settings.json`
+there); leave it off and it switches on for every project on your machine. Then `/workflow:ideate`
+and the rest answer by name in any Claude Code window opened in that folder. `claude plugin details
+workflow` shows what it costs you per session; `claude plugin uninstall workflow --scope project`
+removes it.
 
 ## Where these come from
 
