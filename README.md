@@ -1,6 +1,6 @@
 # workflow-skills
 
-A plugin marketplace (Claude Code, Codex and Antigravity) holding one plugin, `workflow`: the six-step build loop taught in the
+A Claude Code marketplace holding one plugin, `workflow`: the six-step build loop taught in the
 AI Coding Mini-Course.
 
 | Step | Skill | Writes |
@@ -28,31 +28,6 @@ there); leave it off and it switches on for every project on your machine. Then 
 and the rest answer by name in any Claude Code window opened in that folder. `claude plugin details
 workflow` shows what it costs you per session; `claude plugin uninstall workflow --scope project`
 removes it.
-
-## Install in Codex or Antigravity
-
-The same plugin installs in OpenAI's Codex CLI and in Google's Antigravity CLI (`agy`). Both install it
-for every project on the machine (there is no per-folder switch), and both call the skills by a slightly
-different name.
-
-Codex:
-
-```
-codex plugin marketplace add Karnonson/workflow-skills
-codex plugin add workflow@workflow-skills
-```
-
-Then the skills answer as `$workflow:ideate`, `$workflow:refine`, … in any Codex window (`/skills` lists them;
-`codex plugin list` shows the plugin; `codex plugin remove workflow@workflow-skills` removes it).
-
-Antigravity:
-
-```
-agy plugin install https://github.com/Karnonson/workflow-skills
-```
-
-Then the skills answer as `/ideate`, `/refine`, `/spec`, `/slice`, `/implement`, `/audit` in any `agy` window
-(`/skills` lists them; `agy plugin list` shows the plugin; `agy plugin uninstall workflow` removes it).
 
 ## Where these come from
 
