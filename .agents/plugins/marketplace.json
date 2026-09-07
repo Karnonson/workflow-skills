@@ -1,0 +1,12 @@
+{
+  "name": "workflow-skills",
+  "interface": { "displayName": "Workflow skills" },
+  "plugins": [
+    {
+      "name": "workflow",
+      "source": { "source": "local", "path": "./plugins/workflow" },
+      "policy": { "installation": "AVAILABLE" },
+      "category": "Productivity"
+    }
+  ]
+}
